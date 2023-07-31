@@ -1,0 +1,271 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #7f8499;
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #010a35;
+}
+
+header {
+  color: #696e77;
+}
+
+header a {
+  color: #696e77;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+}
+
+.logo img {
+  width: 90%;
+  height: 90%;
+}
+
+header .bi,
+header .fa {
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 650px;
+  position: relative;
+  background: url(../images/bg-hero.jpg) no-repeat center center/cover;
+}
+
+.hero-section::after {
+  position: absolute;
+  content: "";
+  background: rgba(1, 10, 53, 0.8);
+  /* box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000; */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.hero-contetnt {
+  width: 100%;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-contetnt h1 {
+  font-size: 3rem;
+}
+
+.hero-contetnt h1 span {
+  color: #ff800f;
+}
+
+.hero-contetnt p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.contact .container.quote {
+  max-width: 100% !important;
+}
+
+.contact .col-bg {
+  background: url(../images/contact.jpg) no-repeat center center/cover;
+}
+
+.container.quote .quote-text .h-100,
+.container.quote .quote-form .h-100 {
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container.quote .quote-text::after,
+.container.quote .quote-form::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.container.quote .quote-text::after {
+  background: rgba(1, 10, 53, 0.8);
+}
+
+.container.quote .quote-text *,
+.container.quote .quote-form * {
+  position: relative;
+  z-index: 1;
+}
+
+.container.quote .quote-form {
+  background: url(../images/map.jpg) no-repeat center center/cover;
+}
+
+.container.quote .quote-form::after {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.contact .iframe,
+iframe {
+  height: 100%;
+}
+
+/* Utilities Class */
+.text-orange {
+  color: #ff800f;
+}
+
+.text-blue {
+  color: #010a35;
+}
+
+.bg-orange {
+  background-color: #ff800f;
+}
+
+.bg-primary {
+  background-color: #ff800f !important;
+}
+
+.bg-blue {
+  background-color: #010a35;
+}
+
+a:hover {
+  color: #ff800f;
+}
+
+.fs-18 {
+  font-size: 1.125rem;
+}
+
+.fs-15 {
+  font-size: 0.938rem;
+}
+
+.fs-14 {
+  font-size: 0.875rem;
+}
+
+.fs-13 {
+  font-size: 0.813rem;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.flex-gap-32 {
+  gap: 2rem;
+}
+
+.flex-gap-12 {
+  gap: 0.75rem;
+}
+
+.flex-gap-8 {
+  gap: 0.5rem;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 992px) {
+  .container.quote .quote-text {
+    padding-left: calc(((100% - 960px) / 2) + 0.75rem);
+  }
+
+  .container.quote .quote-form {
+    padding-right: calc(((100% - 960px) / 2) + 0.75rem);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container.quote .quote-text {
+    padding-left: calc(((100% - 1140px) / 2) + 0.75rem);
+  }
+
+  .container.quote .quote-form {
+    padding-right: calc(((100% - 1140px) / 2) + 0.75rem);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container.quote .quote-text {
+    padding-left: calc(((100% - 1320px) / 2) + 0.75rem);
+  }
+
+  .container.quote .quote-form {
+    padding-right: calc(((100% - 1320px) / 2) + 0.75rem);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero-section {
+    height: 80vh;
+  }
+
+  .hero-contetnt h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .hero-contetnt p {
+    font-size: 0.938rem;
+    line-height: 1.6;
+  }
+
+  .contact,
+  .contact .container.quote {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .container.quote .quote-text .h-100,
+  .container.quote .quote-form .h-100 {
+    padding: 4rem 0;
+  }
+
+  iframe {
+    height: 450px !important;
+  }
+}
