@@ -45,7 +45,7 @@ header .fa {
 .hero-section {
   height: 650px;
   position: relative;
-  background: url(../images/bg-hero.jpg) no-repeat center center/cover;
+  background: url(../images/img-4.jpg) no-repeat center center/cover;
 }
 
 .hero-section::after {
@@ -235,7 +235,8 @@ a:hover {
 
 @media screen and (max-width: 550px) {
   html,
-  body {
+  body,
+  main {
     overflow-x: hidden;
   }
 
